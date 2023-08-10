@@ -1,10 +1,11 @@
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
 import hero from "../assets/hero.png";
+import { Image } from "@chakra-ui/react";
 
 function Home() {
   return (
-    <div class="flex  items-center flex-col h-auto border-2 ">
+    <div class="flex  items-center  flex-col h-auto ">
       <div class="text-center font-bold text-white text-[54px] mr-[16%] ml-[20%] mt-[5%]">
         Frictionless blockchain <br /> games build with MetaFab
       </div>
@@ -21,9 +22,7 @@ function Home() {
           Book an Intro call <BsArrowRight class="ml-2" />
         </button>
       </div>
-      <div class="mt-10 ">
-        <img src={hero} class="h-[27em]" />
-      </div>
+      <Image src={hero} h={"27em"} mt={10} />
 
       <div class="text-center font-bold text-white text-[44px] mr-[16%] ml-[20%] mt-[5%]">
         The solutions we wish we had when building our games
